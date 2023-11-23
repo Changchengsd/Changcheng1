@@ -1,6 +1,6 @@
 # Changcheng
 My classwork from [BGGN213 at UC San Diego](https://bioboot.github.io/bggn213_F23/) (Fall 2023)
 
-Class 05: [Data vis with GGPLOT](https://bioboot.github.io/bggn213_F23/class-material/lab5.html)
+Class05: [Data vis with GGPLOT](https://bioboot.github.io/bggn213_F23/class-material/lab5.html)
 
-Class 06: [Something else](https://bioboot.github.io/bggn213_F23/class-material/lab_class06.pdf)
+Class06: [Something else](https://bioboot.github.io/bggn213_F23/class-material/lab_class06.pdf)
