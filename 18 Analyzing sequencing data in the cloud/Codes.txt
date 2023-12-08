@@ -1,0 +1,65 @@
+~/
+这一缩写正常情况下就代表最原始的目录C:/Users或者云超算里面的基目录
+
+cd
+返回最原始的目录
+
+nano my_instance.txt
+
+#My AWS instance
+export aws="ubuntu@ec2-18-236-177-226.us-west-2.compute.amazonaws.com"
+echo $aws
+
+head my_instance.txt
+
+echo $aws
+
+source my_instance.txt
+
+ssh -i ~/Class18/Changcheng.pem $aws
+
+tail -5 SRR2156848 1.fastq
+
+
+# Download
+curl -O https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz
+
+# Unzip and Untar (Problem)
+tar -zxvf sratoolkit.current-ubuntu64.tar.gz
+
+每次用某个程序/工具的时候，要么用绝对路径，要么export一个默认路径，会简单很多
+$ export PATH=$PATH:/home/ubuntu/sratoolkit.3.0.1-ubuntu64/bin/
+
+你也可以创建一个笔记本记录路径会很简单
+
+echo $PATH
+ls /user/bin/ls
+ls /user/bin/echo
+pwd
+export PATH=$PATH:/home/ubuntu/sratoolkit.3.0.1-ubuntu64/bin/
+
+fastq-dump指令往往需要一段时间，这个时候不要中断/断开连接，不然align好的fastq文件是截肢了的，没弄完
+
+这一步要多装一个包
+> txi.kallisto <- tximport(files, type = "kallisto", txOut = TRUE)
+Error in infRepImporter(dirname(files[1])) : 
+  reading kallisto results from hdf5 files requires Bioconductor package `rhdf5`
+
+可以再写一个txt文件去运算所有的kallisto
+nano run.sh
+head run.sh
+
+$ kallisto quant -i ___ -o SRR2156849_quant SRR2156849_1.fastq SRR2156849_2.fastq
+$ kallisto quant -i hg19.ensembl -o SRR2156850_quant ___.fastq ___.fastq
+$ kallisto quant -i hg19.ensembl -o SRR2156851_quant SRR2156851_1.fastq SRR2156851_2.fastq
+
+sh run.sh
+
+scp -r -i "~/Downloads/bimm143w23.pem" ubuntu@ec2-34-219-113-54.us-west-2.compute.amazonaws.com:~/*_quant .
+下载的时候一定不要忘记最后的空格点" ."，对于地址阅读很重要
+-r -i 可能对于区分文件夹和文件很重要
+
+最后可以
+history
+history > my_cmd_log.txt
+查看用过的指令和保存指令

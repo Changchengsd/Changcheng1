@@ -1,0 +1,23 @@
+---
+title: "Class15: Hands-on with Git and GitHub"
+author: "Changcheng Li (PID: A69027828)"
+format: pdf
+---
+
+```{r}
+
+```
+
+
+```{r}
+#install.packages("usethis")
+library(usethis)
+create_github_token(
+```
+
+```{r}
+#install.packages("gitcreds")
+library(gitcreds)
+gitcreds_set()
+```
+

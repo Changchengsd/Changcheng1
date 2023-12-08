@@ -1,0 +1,9 @@
+---
+title: "Class12"
+format: pdf
+---
+
+```{r}
+MXL <- read.csv("373531-SampleGenotypes-Homo_sapiens_Variation_Sample_rs8067378.csv")
+table(MXL)
+```

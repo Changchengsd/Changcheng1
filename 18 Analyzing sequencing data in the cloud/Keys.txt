@@ -1,0 +1,23 @@
+Q. How would you check that these files with extension ‘.fastq’ actually look like what we expect for a FASTQ file? You could try printing the first few lines to the shell standard output:
+
+On AWS
+# Fill in the blank!
+head SRR2156848 1.fastq
+
+Q. How could you check the number of sequences in each file?
+
+On AWS
+# Fill in the blanks
+$ grep -c "@SRR2156848" SRR2156848_1.fastq 
+2959900
+
+Check you have pairs of FASTQ files for all four datasets.
+On AWS
+# fill in the blank
+head *.fastq
+
+# Unzip and Untar the resulting file
+tar -zxvf kallisto_linux-v0.44.0.tar.gz
+
+Q. Can you run kallisto to print out it’s citation information?
+kallisto cite
