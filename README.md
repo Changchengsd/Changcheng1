@@ -19,6 +19,6 @@ Class 12: [Genome Bioinformatics](https://github.com/Changchengsd/Changcheng/blo
 
 Class 14: [RNA-Seq analysis mini-project](https://github.com/Changchengsd/Changcheng/blob/main/14%20RNA-Seq%20analysis%20mini-project/Class14/Class14.md)
 
-Class 18: [Analyzing sequencing data in the cloud] https://github.com/Changchengsd/Changcheng/blob/main/18%20Analyzing%20sequencing%20data%20in%20the%20cloud/Class18/Lab18.md)
+Class 18: [Analyzing sequencing data in the cloud] (https://github.com/Changchengsd/Changcheng/blob/main/18%20Analyzing%20sequencing%20data%20in%20the%20cloud/Class18/Lab18.md)
 
 Class 19: [Mini Project_Investigating Pertussis Resurgence](https://github.com/Changchengsd/Changcheng/blob/main/Lab19.md)
